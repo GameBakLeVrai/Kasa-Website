@@ -1,0 +1,13 @@
+nav {
+    padding: 45px 45px 0;
+    @include flexbox($justify: space-between, $align: center);
+    
+    div {
+        @include flexbox($align: center, $gap: 57px);
+
+        a {
+            @include text($fontSize: 24px, $fontWeight: 500);
+            color: $main-color;
+        }
+    }
+}

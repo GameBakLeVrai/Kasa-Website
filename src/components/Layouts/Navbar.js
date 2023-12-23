@@ -1,18 +1,18 @@
-import React from "react";
 import { Link } from "react-router-dom";
-
-import Logo from "../../../images/logo.svg";
+import { Logo } from "../../images";
 
 const Navbar = () => {
 	return (
-		<div>
-			<img src={Logo} alt="Logo" />
+		<nav>
+			<Link to="/">
+				<Logo />
+			</Link>
 
 			<div>
 				<Link to="/">Accueil</Link>
-				<Link to="/">A Propos</Link>
+				<Link to="/a-propos">A Propos</Link>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

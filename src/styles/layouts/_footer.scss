@@ -1,0 +1,26 @@
+footer {
+    padding: unset;
+    height: 209px;
+
+    @include flexbox($direction: column, $justify: center, $align: center);
+    background: black;
+
+    a {
+        margin: auto;
+        
+        svg {
+            width: 122px;
+            height: 39.44px;
+    
+            path {
+                fill: white;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: white;
+        @include text($fontSize: 24px, $fontWeight: 500);
+    }
+}

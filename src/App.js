@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Navbar from "./components/utils/Layouts/Navbar";
-import Footer from "./components/utils/Layouts/Footer";
+import Navbar from "./components/Layouts/Navbar";
+import Footer from "./components/Layouts/Footer";
 
 function App() {
 	return (
