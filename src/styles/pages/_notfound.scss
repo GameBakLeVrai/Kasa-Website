@@ -1,0 +1,20 @@
+.notfound {
+    @include flexbox($direction: column, $align: center, $gap: 50px);
+
+    h1, h3, a {
+        color: $main-color;
+    }
+
+    h1 {
+        @include text($fontSize: 288px, $fontWeight: 700);
+    }
+
+    h3 {
+        @include text($fontSize: 36px, $fontWeight: 500);
+    }
+
+    a {
+        @include text($fontSize: 18px, $fontWeight: 500);
+        text-decoration: underline;
+    }
+}

@@ -1,13 +1,14 @@
 import {
 	BrowserRouter as Router,
 	Routes,
-	Route,
-	Navigate,
+	Route
 } from "react-router-dom";
 
-import Home from "./pages/Home";
 import Navbar from "./components/Layouts/Navbar";
 import Footer from "./components/Layouts/Footer";
+
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
 	return (
@@ -17,7 +18,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 
-				<Route path="*" element={<Navigate replace to="/" />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 
 			<Footer />
