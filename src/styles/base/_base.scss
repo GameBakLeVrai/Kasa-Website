@@ -6,19 +6,20 @@
 // Micro clearfix
 %cf:before,
 %cf:after {
-    content: " ";
-    display: table;
-}
-%cf:after {
-    clear: both;
+	content: " ";
+	display: table;
 }
 
-* {	
-    margin: 0;
+%cf:after {
+	clear: both;
+}
+
+* {
+	margin: 0;
 	padding: 0;
 
-    color: black;
-    font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
 
 	box-sizing: border-box;
 
@@ -31,16 +32,16 @@
 	user-select: none;
 }
 
-#root {    
-    min-height: 100vh;
+#root {
+	min-height: 100vh;
 
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .main {
-    padding: 45px 45px 0;
-    flex-grow: 1;
+	padding: 45px 45px 0;
+	flex-grow: 1;
 }
 
 // Remove list style

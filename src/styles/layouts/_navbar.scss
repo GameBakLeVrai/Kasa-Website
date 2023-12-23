@@ -8,6 +8,14 @@ nav {
         a {
             @include text($fontSize: 24px, $fontWeight: 500);
             color: $main-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a.active {
+            text-decoration: underline;
         }
     }
 }

@@ -1,7 +1,8 @@
 import {
 	BrowserRouter as Router,
 	Routes,
-	Route
+	Route,
+	Navigate,
 } from "react-router-dom";
 
 import Navbar from "./components/Layouts/Navbar";
@@ -17,8 +18,10 @@ function App() {
 
 			<Routes>
 				<Route exact path="/" element={<Home />} />
+				<Route exact path="/notfound" element={<NotFound />} />
 
 				<Route path="*" element={<NotFound />} />
+				{ /*<Route path="*" element={<Navigate replace to="/notfound" />} />*/ }
 			</Routes>
 
 			<Footer />

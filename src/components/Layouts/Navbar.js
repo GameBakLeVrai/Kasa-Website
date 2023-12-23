@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import { Logo } from "../../images";
 
 const Navbar = () => {
+	const { pathname } = useLocation();
+
+	const getActive = (path) => (pathname === `/${path}`) ? "active" : "";
+
 	return (
 		<nav>
 			<Link to="/">
@@ -9,8 +13,8 @@ const Navbar = () => {
 			</Link>
 
 			<div>
-				<Link to="/">Accueil</Link>
-				<Link to="/a-propos">A Propos</Link>
+				<Link to="/" className={getActive("")}>Accueil</Link>
+				<Link to="/a-propos" className={getActive("a-propos")}>A Propos</Link>
 			</div>
 		</nav>
 	);
