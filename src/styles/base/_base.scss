@@ -1,5 +1,5 @@
 /* ----------- Import Font ----------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 /* ----------- Default Setup ----------- */
 
@@ -18,7 +18,7 @@
 	padding: 0;
 
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 	box-sizing: border-box;
 
@@ -29,6 +29,18 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+#root {    
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding: 45px 45px 0;
+    flex-grow: 1;
 }
 
 // Remove list style
