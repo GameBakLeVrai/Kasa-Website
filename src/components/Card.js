@@ -1,0 +1,15 @@
+const Card = ({ data }) => {
+	const { title, cover } = data;
+
+	return (
+		<div className="card__container">
+			<img src={cover} alt={`${title} Background`} />
+
+			<div className="card__text-container">
+				<p>{title}</p>
+			</div>
+		</div>
+	);
+};
+
+export default Card;
