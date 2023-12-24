@@ -44,6 +44,12 @@
 	flex-grow: 1;
 }
 
+@include responsive("phone", $type: "max") {
+	.main {
+		padding: 20px 20px 0;
+	}	
+}
+
 // Remove list style
 ul {
 	list-style-type: none;

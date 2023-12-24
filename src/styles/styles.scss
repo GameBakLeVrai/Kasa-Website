@@ -1,11 +1,12 @@
-// Base Importation
-@import "./base/base";
-
 // Utils Importation
 @import "./utils/mixins";
 @import "./utils/variables";
 
+// Base Importation
+@import "./base/base";
+
 // Components Importation
+@import "./components/banner";
 
 // Layouts Importation
 @import "./layouts/navbar";

@@ -1,6 +1,10 @@
 nav {
     padding: 45px 45px 0;
     @include flexbox($justify: space-between, $align: center);
+
+    @include responsive("phone", $type: "max") {
+        padding: 20px 20px 0;
+    }
     
     div {
         @include flexbox($align: center, $gap: 57px);
@@ -16,6 +20,15 @@ nav {
 
         a.active {
             text-decoration: underline;
+        }
+
+        @include responsive("phone", $type: "max") {
+            @include flexbox($align: center, $gap: 26px);
+
+            a {
+                @include text($fontSize: 12px, $fontWeight: 500);
+                text-transform: uppercase;
+            }
         }
     }
 }

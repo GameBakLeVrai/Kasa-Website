@@ -7,6 +7,9 @@ footer {
 
     a {
         margin: auto;
+        @include responsive("phone", $type: "max") {
+            margin: unset;
+        }
         
         svg {
             width: 122px;
@@ -22,5 +25,12 @@ footer {
         margin-bottom: 20px;
         color: white;
         @include text($fontSize: 24px, $fontWeight: 500);
+
+        @include responsive("phone", $type: "max") {
+            margin-top: 15px;
+            margin-bottom: unset;
+            
+            @include text($fontSize: 12px, $fontWeight: 500);
+        }
     }
 }

@@ -17,4 +17,21 @@
         @include text($fontSize: 18px, $fontWeight: 500);
         text-decoration: underline;
     }
+
+    @include responsive("phone", $type: "max") {
+        @include flexbox($direction: column, $justify: space-around, $align: center, $gap: 50px);
+
+        h1 {
+            @include text($fontSize: 96px, $fontWeight: 700);
+        }
+    
+        h3 {
+            @include text($fontSize: 18px, $fontWeight: 500);
+            text-align: center;
+        }
+    
+        a {
+            @include text($fontSize: 14px, $fontWeight: 500);
+        }
+    }
 }
