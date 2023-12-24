@@ -19,13 +19,13 @@ function App() {
 
 			<Routes>
 				<Route index element={<Home />} />
-				
+
 				<Route path="/logement" element={<Navigate replace to="/" />} />
 				<Route exact path="/logement/:id" element={<Logement />} />
 
 				<Route exact path="/notfound" element={<NotFound />} />
 				<Route path="*" element={<NotFound />} />
-				{ /*<Route path="*" element={<Navigate replace to="/notfound" />} />*/ }
+				{/*<Route path="*" element={<Navigate replace to="/notfound" />} />*/}
 			</Routes>
 
 			<Footer />
