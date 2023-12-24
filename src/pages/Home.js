@@ -1,9 +1,10 @@
-import React from "react";
+import Banner from "../components/Banner";
+import HomeBG from "../images/home_bg.jpg";
 
 const Home = () => {
 	return (
 		<div className="main">
-			<p>fdsf</p>
+			<Banner image={HomeBG} filter={true} text={"Chez vous, partout et ailleurs"} />
 		</div>
 	)
 };
