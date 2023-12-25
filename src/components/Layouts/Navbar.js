@@ -14,7 +14,7 @@ const Navbar = () => {
 
 			<div>
 				<Link to="/" className={getActive("")}>Accueil</Link>
-				<Link to="/a-propos" className={getActive("a-propos")}>A Propos</Link>
+				<Link to="/propos" className={getActive("a-propos")}>A Propos</Link>
 			</div>
 		</nav>
 	);

@@ -11,6 +11,7 @@ import Footer from "./components/Layouts/Footer";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Logement from "./pages/Logement";
+import Propos from "./pages/Propos";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 
 			<Routes>
 				<Route index element={<Home />} />
+				<Route path="/propos" element={<Propos />} />
 
 				<Route path="/logement" element={<Navigate replace to="/" />} />
 				<Route exact path="/logement/:id" element={<Logement />} />

@@ -1,0 +1,20 @@
+.propos {
+    .banner {
+        @include responsive("phone", $type: "max") {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__dropdown {
+        @include flexbox($direction: column, $justify: center, $align: center, $gap: 30px);
+
+        @include responsive("phone", $type: "max") {
+            @include flexbox($direction: column, $justify: center, $align: center, $gap: 19px);
+        }
+
+        .dropdown {
+            max-width: 1023px;
+            width: 100%;
+        }
+    }
+}
