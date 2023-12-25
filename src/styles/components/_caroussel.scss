@@ -6,6 +6,11 @@
 
     border-radius: 25px;
 
+    @include responsive("phone", $type: "max") {
+        height: 255px;
+        border-radius: 10px;
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -42,6 +47,22 @@
 
             @include text($fontSize: 18px, $fontWeight: 500);
             color: white;
+        }
+
+        @include responsive("phone", $type: "max") {
+            svg {
+                width: 24px;
+                height: 24px;
+
+                &:nth-child(1) {
+                    left: 25px;
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+            }
+
+            p {
+                display: none;
+            }
         }
     }
 }

@@ -7,9 +7,11 @@ const Caroussel = ({ pictures }) => {
 	const nextImage = () => setIndex((prev) => (prev + 1) % pictures.length);
 	const prevImage = () => setIndex((prev) => (prev - 1 + pictures.length) % pictures.length);
 
+	if(!pictures) return <div>Loading ...</div>;
+
 	return (
 		<div className="caroussel">
-			<img src={pictures[index % pictures.length]} alt="Caroussel Background" />
+			<img src={pictures[index]} alt="Caroussel Background" />
 
 			<div className="caroussel__infos">
 				<Arrow click={prevImage} />
