@@ -1,10 +1,6 @@
 .card {
     padding: 40px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
+    @include flexbox($justify: space-between, $wrap: wrap, $gap: 40px);
 
     background-color: $grey-1;
     border-radius: 25px;

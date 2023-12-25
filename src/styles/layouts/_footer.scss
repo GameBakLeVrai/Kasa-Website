@@ -1,5 +1,5 @@
 footer {
-    padding: unset;
+    margin-top: 20px;
     height: 209px;
 
     @include flexbox($direction: column, $justify: center, $align: center);
