@@ -1,0 +1,15 @@
+.star {
+    width: 24px;
+    height: 24px;
+
+    @include responsive("phone", $type: "max") {
+        width: 13px;
+        height: 13px;
+    }
+
+    &.active {
+        path {
+            fill: $main-color;
+        }
+    }
+}
