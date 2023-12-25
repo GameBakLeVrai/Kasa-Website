@@ -105,6 +105,10 @@
     }
 
     &__dropdown {
-        @include flexbox($justify: space-between, $wrap: wrap, $gap: 20px);
+        @include flexbox($justify: space-between, $gap: 20px);
+
+        @include responsive("phone", $type: "max") {
+            @include flexbox($justify: space-between, $wrap: wrap, $gap: 20px);
+        }
     }
 }
