@@ -13,12 +13,16 @@ const Caroussel = ({ pictures }) => {
 		<div className="caroussel">
 			<img src={pictures[index]} alt="Caroussel Background" />
 
-			<div className="caroussel__infos">
-				<Arrow click={prevImage} />
-				<Arrow click={nextImage} />
+			{
+				(pictures.length < 1) && (
+					<div className="caroussel__infos">
+						<Arrow click={prevImage} />
+						<Arrow click={nextImage} />
 
-				<p>{index+1}/{pictures.length}</p>
-			</div>
+						<p>{index+1}/{pictures.length}</p>
+					</div>
+				)
+			}
 		</div>
 	);
 };
