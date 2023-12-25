@@ -1,0 +1,110 @@
+.logement {
+    &__container {
+        margin: 20px 0;
+        @include flexbox($justify: space-between, $wrap: wrap);
+
+        @include responsive("phone", $type: "max") {
+            margin: 0 0 20px;
+        }
+
+        &--text {
+            margin-top: 20px;
+
+            h1, p {
+                color: $main-color;
+            }
+
+            h1 {
+                @include text($fontSize: 36px, $fontWeight: 500);
+            }
+
+            p {
+                @include text($fontSize: 18px, $fontWeight: 500);
+            }
+
+            @include responsive("phone", $type: "max") {
+                h1 {
+                    @include text($fontSize: 18px, $fontWeight: 500);
+                }
+    
+                p {
+                    margin-top: 3px;
+                    @include text($fontSize: 14px, $fontWeight: 500);
+                }
+            }
+        }
+
+        &--tags {
+            margin-top: 20px;
+            @include flexbox($gap: 10px);
+
+            p {
+                padding: 5px 10px;
+
+                color: white;
+                background-color: $main-color;
+
+                @include text($fontSize: 14px, $fontWeight: 500);
+                border-radius: 10px;
+            }
+
+            @include responsive("phone", $type: "max") {
+                margin-top: 10px;
+                
+                p {
+                    @include text($fontSize: 10px, $fontWeight: 500);
+                }
+            }
+        }
+
+        &--infos {
+            margin-top: 20px;
+            @include flexbox($direction: column, $gap: 20px);
+
+            @include responsive("phone", $type: "max") {
+                width: 100%;
+                @include flexbox($direction: row-reverse, $justify: space-between);
+            }
+
+            &__host {
+                @include flexbox($align: center, $gap: 5px);
+                
+                p {
+                    @include text($fontSize: 18px, $fontWeight: 500);
+                    color: $main-color;
+                    // white-space: pre-line; Don't work :(
+                }
+
+                img {
+                    width: 64px;
+                    height: 64px;
+
+                    border-radius: 50%;
+                }
+
+                @include responsive("phone", $type: "max") {
+                    p {
+                        @include text($fontSize: 12px, $fontWeight: 500);
+                    }
+    
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+
+            &__stars {
+                @include flexbox($justify: flex-end, $align: center, $gap: 10px);
+
+                @include responsive("phone", $type: "max") {
+                    @include flexbox($align: center, $gap: 5px);
+                }
+            }
+        }
+    }
+
+    &__dropdown {
+        @include flexbox($justify: space-between, $wrap: wrap, $gap: 20px);
+    }
+}
