@@ -14,7 +14,7 @@ const Caroussel = ({ pictures }) => {
 			<img src={pictures[index]} alt="Caroussel Background" />
 
 			{
-				(pictures.length < 1) && (
+				(pictures.length > 1) && (
 					<div className="caroussel__infos">
 						<Arrow click={prevImage} />
 						<Arrow click={nextImage} />
