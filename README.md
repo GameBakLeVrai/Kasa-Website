@@ -1,3 +1,15 @@
+# Kasa - Website
+
+Kasa, an apartment rental platform for private individuals.
+
+## Background of Project
+
+- Kasa is recruiting you as a freelance front-end developer to develop their new web platform. Kasa has been in the apartment rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading apartment rental companies in France.
+
+- The Kasa site was coded over 10 years ago in ASP.NET, with a significant amount of legacy code. So my job is to do a complete overhaul, moving to a full JavaScript stack with NodeJS on the back-end, and React on the front-end. 
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
